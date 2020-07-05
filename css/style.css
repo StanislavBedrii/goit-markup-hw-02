@@ -64,7 +64,7 @@ body {
   color: #2196f3;
 }
 
-/* Оформление секции Герой */
+/* Оформление секции ГЕРОЙ */
 .title-hero {
   font-weight: 900;
   font-size: 44px;
@@ -83,4 +83,18 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   /* color: #ffffff; */
+}
+
+/* Оформление секции НАШИ ПРЕИМУЩЕСТВА */
+.advantages-list-name {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantages-description {
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
