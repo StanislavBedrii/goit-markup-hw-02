@@ -189,7 +189,6 @@ body {
 /* Оформление страницы ПОРТФОЛИО */
 /* Оформление фильтер-кнопок */
 .filter-button {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -199,4 +198,28 @@ body {
 .filter-button:hover,
 .filter-button:focus {
   color: var(--accent-color);
+}
+
+/* Оформление примеров-работ */
+.work-examples-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--primary-title-color);
+  letter-spacing: 0.06em;
+}
+
+.work-examples-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+.work-examples-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  /* color: var(--secondary-white-text-color); */
+  color: var(--primary-text-color);
 }
