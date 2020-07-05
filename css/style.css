@@ -25,20 +25,16 @@ body {
 
 /* Шапка страницы */
 /* Оформление логотипа */
-.logo {
+.logo,
+.logo-web {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
 }
 .logo-web {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #2196f3;
 }
 /* Оформление nav */
@@ -52,6 +48,7 @@ body {
 .nav-list-link:focus {
   color: #2196f3;
 }
+
 /* Оформление контактов в хедере */
 .header-contacts-mail,
 .header-contacts-tel {
@@ -65,4 +62,25 @@ body {
 .header-contacts-tel:hover,
 .header-contacts-tel:focus {
   color: #2196f3;
+}
+
+/* Оформление секции Герой */
+.title-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /* color: #ffffff; */
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  /* color: #ffffff; */
 }
