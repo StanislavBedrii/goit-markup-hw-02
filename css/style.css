@@ -1,0 +1,29 @@
+body {
+  background-color: #ffffff;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+/* цвет основного текста (nav, h2-6) #212121; */
+/* цвет вторичного текста (pб a) #757575; */
+/* белый цвет на темном фоне (h1, p, btn, (блок3)) #FFFFFF; */
+/* акцент (btn, logo, a) #2196F3 */
+/* цвет основного фона #FFFFFF */
+/* цвет вторичного (белого) фона #F5F4FA; */
+/* цвет вторичного (серого) фона rgba(47, 48, 58, 0.8) */
+/* фон подвала ##2F303A */
+
+/* Шапка страницы */
+/* Оформление логотипа */
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
