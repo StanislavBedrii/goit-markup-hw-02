@@ -1,12 +1,12 @@
 body {
-  background-color: #ffffff;
-  color: #212121;
-  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-bgr-color);
+  color: var(--primary-title-color);
+  font-family: var(--main-font);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-/* цвет основного текста (nav, h2-6) #212121; */
-/* цвет вторичного текста (pб a) #757575; */
+/* цвет основного текста заголовков (nav, h2-6) #212121; */
+/* цвет основного текста (p, a) #757575; */
 /* белый цвет на темном фоне (h1, p, btn, (блок3)) #FFFFFF; */
 /* акцент (btn, logo, a) #2196F3 */
 /* цвет лого #000000 */
@@ -15,8 +15,21 @@ body {
 /* цвет основного фона #FFFFFF */
 /* цвет вторичного (белого) фона #F5F4FA; */
 /* цвет вторичного (серого) фона rgba(47, 48, 58, 0.8) */
-/* фон подвала ##2F303A */
+/* фон подвала #2F303A */
 
+/* ROOT */
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-title-color: #212121;
+  --primary-text-color: #757575;
+  --secondary-white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --footer-address-text-color: rgba(255, 255, 255, 0.6);
+  --primary-bgr-color: #ffffff;
+  --secondary-bgr-color: rgba(47, 48, 58, 0.8);
+  --footer-bgr-color: #2f303a;
+}
 /* RESET decoration */
 .link {
   text-decoration: none;
@@ -29,25 +42,24 @@ body {
 /* Оформление логотипа */
 .logo,
 .logo-web {
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
 }
 .logo-web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* Оформление nav */
 .nav-list-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Оформление контактов в хедере */
@@ -56,18 +68,18 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .header-contacts-mail:hover,
 .header-contacts-mail:focus,
 .header-contacts-tel:hover,
 .header-contacts-tel:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Оформление секции ГЕРОЙ */
 .hero {
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--secondary-bgr-color);
 }
 .title-hero {
   font-weight: 900;
@@ -76,7 +88,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-white-text-color);
 }
 .button {
   font-weight: 700;
@@ -86,8 +98,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--secondary-white-text-color);
 }
 
 /* Оформление секции НАШИ ПРЕИМУЩЕСТВА */
@@ -99,7 +111,7 @@ body {
 .advantages-description {
   font-weight: 400;
   line-height: 1.71;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /* Оформление секции Чем мы занимаемся */
@@ -115,8 +127,8 @@ body {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: #ffffff;
+  background-color: var(--secondary-bgr-color);
+  color: var(--secondary-white-text-color);
 }
 
 /* Оформление секции НАША КОМАНДА */
@@ -131,36 +143,36 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /* Оформление ПОДВАЛА страницы */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-bgr-color);
 }
 .footer-logo {
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #ffffff;
+  color: var(--secondary-white-text-color);
 }
 .footer-address-map {
   font-weight: 400;
   line-height: 1/71;
-  color: #ffffff;
+  color: var(--secondary-white-text-color);
 }
 .footer-address-mail,
 .footer-address-tel {
   font-weight: 400;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-address-text-color);
 }
 .join {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-white-text-color);
 }
 
 .footer-address-mail:hover,
@@ -169,7 +181,7 @@ body {
 .footer-address-tel:focus,
 .footer-address-map:hover,
 .footer-address-map:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Оформление страницы ПОРТФОЛИО */
