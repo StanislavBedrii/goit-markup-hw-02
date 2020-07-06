@@ -193,11 +193,13 @@ body {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+  background-color: var(--primary-bgr-color);
   color: var(--primary-title-color);
 }
 .filter-button:hover,
 .filter-button:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--secondary-white-text-color);
 }
 
 /* Оформление примеров-работ */
